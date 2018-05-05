@@ -8,16 +8,16 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: "Times New Roman";
-    color:"Black";
+    color:Black;
 }
 
 h1 {
-    font-size: 20px;
-    color: "White";
+    font-size: 16px;
+    color: White;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: "Magenta";
+    background-color: Magenta;
     color: whitesmoke;
 }
 
