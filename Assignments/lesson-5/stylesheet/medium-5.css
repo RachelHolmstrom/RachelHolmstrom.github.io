@@ -2,7 +2,8 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+
+    button.DropButton { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
 
     body nav {
         display: inline;

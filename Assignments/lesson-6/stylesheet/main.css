@@ -3,65 +3,115 @@
 }
 body {
     margin: 1%;
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
 }
 .header {
-    background-color: forestgreen;
+    background-color: #3590F3;
     padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #F1E3F3;
+}
+header h1 {
+    font-size: 2em;
+}
+main {
     text-align: center;
 }
 .FullImg {
-    width: 98%;
+    width: 100%;
     height: auto;
-    float:left;
 }
-.HalfImg {
-    width: 50%;
-    height: auto;
-    float: left;
+main h2 {
+    font-size: 2rem;
 }
-.TinyImg {
-    position: absolute;
-    width: 10%;
-    height: 30px;
-    padding: 0px;
-    float: right;
-}
+
 .DropButton {
-    background-color: blue;
+    background-color: transparent;
     color: aliceblue;
     padding: 16px;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
+    float: right;
 }
 nav {
-    position: relative;
-    display: inline-block;
-}
-.MenuContent {
-    display: none;
-    position: absolute;
     background-color: antiquewhite;
     margin: 0px;
     min-width: 160px;
     z-index: 1;
 }
-.MenuContent li {
-    color: dimgrey;
+nav ul {
+    list-style-type: none;
+    padding: o;
+
+}
+nav li a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
 }
+nav li {
+    border: 1px solid white;
+}
+
 nav:hover .DropButton{
     background-color: cadetblue;
 }
-
-nav:hover .MenuContent {
+nav:hover {
     display: block;
 }
-.MenuContent li {
-    background-color:aliceblue;
+section.weather-summary {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    border: 5px solid #62BFED;
+    font-size: 1.3rem;
+}
+.TinyImage {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+.highlow, .current {
+    padding: 20px;
+    margin: auto;
+}
+.HalfImg {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    float: right;
 }
 .forcast {
     display:none;
+}
+article {
+    display: 1.2rem;
+}
+.town-article ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer section.contact {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    font-size: .8rem;
+    background-color: #F1E3F3;
+}
+section.footer-bar{
+    background-color: #6BZFED;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    padding: 5px;
 }
