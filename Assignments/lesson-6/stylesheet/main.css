@@ -27,14 +27,15 @@ main h2 {
     font-size: 2rem;
 }
 
-.DropButton {
-    background-color: transparent;
+nav button {
+    background-color: #3590F3;
     color: aliceblue;
     padding: 16px;
     font-size: 30px;
     border: none;
     cursor: pointer;
-    float: right;
+    float: left;
+    display: block;
 }
 nav {
     background-color: antiquewhite;

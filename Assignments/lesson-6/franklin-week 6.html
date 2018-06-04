@@ -15,12 +15,13 @@
 
 <body>
     <header>
-        <button class="DropButton">&#9776;</button>
+
         <h1>Tri-City Weather Bureau</h1>
     </header>
 
     <nav>
-       <ul>
+        <button onclick="toggleHam()">&#9776;</button>
+       <ul id="primaryNav" class="hide">
         <li><a href="#">Home</a></li>
         <li><a href="#">Franklin</a></li>
         <li><a href="#">Greenville</a></li>
@@ -99,6 +100,7 @@
             <h2>&copy;2018 | All Rights Reserved |Tri-City Weather Bureau | <span id="currentdate">Current Date Placeholder</span></h2>
         </section>
     </footer>
+    <script src="javascript/main.js"></script>
  </body>
 </html>
 
