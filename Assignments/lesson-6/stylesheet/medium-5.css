@@ -42,6 +42,15 @@
         margin: auto;
         margin-bottom: 20px;
     }
+    nav ul.hide{
+        display: block;
+    }
+    .Small {
+        display: none;
+    }
+    .Large {
+        display: none;
+    }
 
 }
 
