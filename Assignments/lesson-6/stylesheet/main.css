@@ -45,7 +45,7 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    padding: o;
+    padding: 0px;
 
 }
 nav li a {
@@ -60,7 +60,7 @@ nav li {
     border: 1px solid white;
 }
 
-nav:hover .DropButton{
+nav:hover .button{
     background-color: cadetblue;
 }
 nav:hover {
@@ -92,7 +92,7 @@ section.weather-summary {
     display:none;
 }
 article {
-    display: 1.2rem;
+    font-size: 1.2rem;
 }
 .town-article ::after {
     content: "";
@@ -111,7 +111,7 @@ footer {
     background-color: #F1E3F3;
 }
 section.footer-bar{
-    background-color: #6BZFED;
+    background-color: #8FB8ED;
     color: antiquewhite;
     font-size: 1.2rem;
     padding: 5px;

@@ -9,6 +9,7 @@
     .Large {
         display: block;
     }
+    button { display: none; }
 }
 
 
