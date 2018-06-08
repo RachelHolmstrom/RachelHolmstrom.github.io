@@ -23,6 +23,12 @@ main {
     width: 100%;
     height: auto;
 }
+section.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+
 main h2 {
     font-size: 2rem;
 }
@@ -126,4 +132,5 @@ nav ul.hide {
     .Medium {
         display: none;
     }
+
 }
