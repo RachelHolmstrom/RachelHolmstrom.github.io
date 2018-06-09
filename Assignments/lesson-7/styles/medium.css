@@ -3,7 +3,7 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+   nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
 
     nav ul {
         overflow: hidden;
@@ -48,6 +48,10 @@
     .Small {
         display: none;
     }
+    .Medium {
+        width: 100%;
+        height: auto;
+    }
     .Large {
         display: none;
     }
@@ -56,7 +60,7 @@
     }
     section.gallery {
         grid-template-columns: repeat(2, 50%);
-        grid-gap: 2%;
+        grid-gap: 0%;
     }
 }
 

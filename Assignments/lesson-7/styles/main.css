@@ -19,16 +19,15 @@ header h1 {
 main {
     text-align: center;
 }
-.FullImg {
-    width: 100%;
-    height: auto;
-}
 section.gallery {
     display: grid;
     grid-template-columns: repeat(1, 100%);
+    text-align: center;
 }
-
-
+.FullImg {
+    width: 100%;
+    height: 100%;
+}
 main h2 {
     font-size: 2rem;
 }
@@ -124,6 +123,10 @@ section.footer-bar{
 }
 nav ul.hide {
     display: none;
+}
+.Small{
+    width: 100%;
+    height: auto;
 }
 @media only screen and (max-width: 37.5em) {
     .Large {
