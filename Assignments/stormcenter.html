@@ -38,31 +38,44 @@
             <h1>Storm Report</h1>
                 <form method="get" action="thanks.html">
                     <fieldset>
-                        <legend>Storm Center</legend>
-                        <label><span>Storm Date</span><input type="datalist" name="date"></label>
-                        <label><span>Type of Storm</span><input type="text" name="storm" list="storms">
-                            <datalist>
+                        <legend>Storm Center</legend><br>
+                        <label>Storm Date<input type="date"></label><br>
+                        <label><span>Type of Storm</span><input type="text" name="storm" list="storm">
+                            <datalist id="storm">
                                 <option value="Flash Flood"></option>
                                 <option value="Hail"></option>
                                 <option value="Hurricane"></option>
                                 <option value="Thunderstorm"></option>
                                 <option value="Tornado"></option>
                             </datalist>
-                        </label>
-                        <label><span>Storm Severity</span><span id="ratingvalue">5</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-
-
-                        </label>
+                        </label><br>
+                        <label>Storm Severity id="ratingvalue"><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        </label><br>
+                        <label>
+                            <select name="City">
+                                <option value="">Select Region</option>
+                                <option value="Franklin">Franklin</option>
+                                <option value="Greenville">Greenville</option>
+                                <option value="Springville">Springville</option>
+                            </select>
+                        </label><br>
+                        <label>Are you in danger?</label><br>
+                        <div>Level of Danger</div>
+                        <label><input type="radio" name="persn" value="yes">Yes</label>
+                        <label><input type="radio" name="person" value="no">No</label>
+                        <label><input type="radio" name="person" value="maybe">Maybe</label>
 
                     </fieldset>
+
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label><span>First Name*</span> <input type="text" name="fname" required></label>
-                        <label><span>Last Name* </span><input type="text" name="lname" required></label>
-                        <label><span>Phone* </span><input type="tel" name="phone" placeholder="1235551234" required></label>
-                        <label><span>Zip Code* </span><input type="number" name="zipcode" placeholder="123451234" required></label>
-                        <label><span>Email </span><input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <label>First Name*<input type="text" name="fname" required></label><br>
+                        <label>Last Name*<input type="text" name="lname" required></label><br>
+                        <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label><br>
+                        <label>Zip Code* <input type="number" name="zipcode" placeholder="123451234" required></label><br>
+                        <label>Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                     </fieldset>
+                    <input type="submit" value="Enter Report">
                 </form>
 
 
