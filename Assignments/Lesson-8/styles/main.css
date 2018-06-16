@@ -141,9 +141,13 @@ form legend {
 }
 form label.one {
     display: block;
-    padding: 5px;
+    padding: none;
     color: cadetblue;
-    font-size: .5rem 2%;
+    font-size: .8rem;
+    margin: 20px;
+}
+form label.one input {
+    margin: 50px;
 }
 form label.one, form label.one select{
     display: block;
