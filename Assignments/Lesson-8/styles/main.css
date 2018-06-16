@@ -130,7 +130,7 @@ nav ul.hide {
 }
 form fieldset {
     margin:  2rem 0;
-    border: 1px solid color: cadetblue;
+    border: 1px solid cadetblue;
     border-radius: 10px;
     padding: .5rem 2%;
 }
@@ -141,12 +141,11 @@ form legend {
 }
 form label.one {
     display: block;
-    padding-top: 1rem;
+    padding: 5px;
     color: cadetblue;
-    font-size: 8rem;
+    font-size: .5rem 2%;
 }
 form label.one, form label.one select{
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px cadetblue;

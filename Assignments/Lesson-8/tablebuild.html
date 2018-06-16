@@ -1,51 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<thead>
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Rachel Holmstrom">
     <meta name="description" content="Assignment">
     <title>Build a Table</title>
     <link rel="stylesheet" href="styles/normalize.css">
-
-</thead>
-<style>
-    font_family: "Ubuntu, sans-serf";
-    td: {
-        text-align: center;
-    }
-    h1, p {
-        background-color: #e7f0ed;
-    }
-    table#01 {
-        width: 100%;
-        text-align: center;
-
-        }
-    table#t01 tr:nth-child(even) {
-        background-color:  #628ca6;
-
-    }
-    table#t01 tr:nth-child(odd) {
-        background-color: #7fb9c2;
-
-    }
-    table#t01 th {
-        background-color: black;
-        color: white;
-    }
-
-    </style>
-<tbody>
-
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+<body>
     <main>
-        <table id="t01">
-        <h1>ACME Wildwest</h1>
-        <table style="width:100%">
-            <tr>
-                <th>Period</th>
-                <th>Sales</th>
-                <th>Sales Goal</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
             <tr>
                 <td>August</td>
                 <td>$3,590</td>
@@ -68,23 +44,18 @@
             </tr>
             <tr>
                 <td>Black Friday</td>
-                <td>$3,200</td>
+                <td colspan="2">$3,200</td>
             </tr>
             <tr>
                 <td>December</td>
                 <td>$6,800</td>
                 <td>$7,500</td>
             </tr>
-            </table>
+            <tr>
+                <td colspan="3">Complied 12.20.20 by bRuals</td>
+            </tr>
+            </tbody>
         </table>
-
     </main>
-
-</tbody>
-<tfoot>
-    <p>Complied 12.20.20 by bRuals</p>
-    </tfoot>
-
-
-
+</body>
 </html>
