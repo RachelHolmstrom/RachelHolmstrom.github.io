@@ -19,5 +19,8 @@
     section.gallery figure:hover{
         box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.4);
     }
+    form label.two {
+        padding: .4rem 0;
+    }
 }
 
