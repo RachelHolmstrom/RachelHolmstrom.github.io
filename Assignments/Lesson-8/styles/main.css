@@ -34,16 +34,18 @@ main h2 {
 
 nav button {
     background-color: #3590F3;
-    color: aliceblue;
+    color: antiquewhite;
     padding: 16px;
     font-size: 30px;
     border: none;
     cursor: pointer;
     float: left;
     display: block;
+    margin: 10px;
+    margin-bottom: 50px;
 }
 nav {
-    background-color: antiquewhite;
+    background: none;
     margin: 0px;
     min-width: 160px;
     z-index: 1;
@@ -141,7 +143,7 @@ form legend {
 }
 form label.one {
     display: block;
-    padding: none;
+    padding: .75px;
     color: cadetblue;
     font-size: .8rem;
     margin: 20px;
@@ -153,10 +155,10 @@ form label.one, form label.one select{
     display: block;
     font-size: 1rem;
     border: solid 1px cadetblue;
-    border-radius: 4px;
-    padding: .75rem;
+    border-radius: 1px;
+    padding: .75rem 0;
     color: cadetblue;
-    width: 100%;
+    width: 96%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1)
 }
