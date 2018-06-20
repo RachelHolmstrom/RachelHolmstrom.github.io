@@ -25,7 +25,9 @@ header p {
     font-weight: bold;
     text-align: center;
 }
-
+#gotta {
+    display: none;
+}
 /* section styles */
 
 section article {
