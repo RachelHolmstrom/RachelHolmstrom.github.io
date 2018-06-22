@@ -38,16 +38,18 @@
         <section class="weather summary">
             <div class="highlow">
                 <h3>Weather Summary</h3>
-                <p>High: 90 F</p>
-                <p>Low: 66 F</p>
-                <p>Preciptation: 0%</p>
-                <p>Wind Speed: 5mph SW</p>
+                <p>The current temperature in <span id="place">city</span> is <span id="current-temp"></span>&deg;</p>
+                <p>The current weather <span id="current-weather">temp</span></p>
+                <p>The high will be <span id="high-temperature">high</span></p>
+                <p>The low will be <span id="low-temperature">low</span></p>
+                <p>The wimd speed is <span id="wind-speed">speed</span></p>
                 <p id="windchill">Wind Chill: </p>
             </div>
             <div class="current">
             <h3>Current Weather</h3>
-                <p>Sunny</p>
-                <img src="images/week5sunny.jpg" alt="Sunny Day" class="Tinyimg">
+                <figure>
+                <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                </figure>
             </div>
         </section>
 
@@ -106,6 +108,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
  </body>
 </html>
 
