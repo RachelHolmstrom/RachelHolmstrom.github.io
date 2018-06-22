@@ -14,6 +14,7 @@ body {
     color: #F1E3F3;
 }
 header h1 {
+    text-align: center;
     font-size: 2em;
 }
 main {
@@ -119,9 +120,11 @@ footer {
     background-color: #F1E3F3;
 }
 section.footer-bar{
+    display: flex;
+    flex-flow: column;
     background-color: #8FB8ED;
     color: antiquewhite;
-    font-size: 1.2rem;
+    font-size: .8rem;
     padding: 5px;
 }
 nav ul.hide {
