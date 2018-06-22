@@ -135,6 +135,8 @@ nav ul.hide {
     height: auto;
 }
 form fieldset {
+    display: flex;
+    flex-flow: column;
     margin:  2rem 0;
     border: 1px solid cadetblue;
     border-radius: 10px;
@@ -188,6 +190,7 @@ form label.two input:required {
 form label.two input:required:valid {
     border-left: blue solid 6px;
 }
+
 @media only screen and (max-width: 37.5em) {
     .Large {
         display: none;
