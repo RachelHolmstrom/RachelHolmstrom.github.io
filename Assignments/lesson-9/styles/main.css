@@ -29,6 +29,9 @@ div.gallery {
     width: 100%;
     height: 100%;
 }
+article ul{
+    list-style-type: none;
+}
 main h2 {
     font-size: 2rem;
 }
@@ -85,6 +88,9 @@ section.weather-summary {
     width: 100%;
     height: auto;
     padding: 0px;
+}
+.center {
+    text-align: center;
 }
 .highlow, .current {
     padding: 20px;

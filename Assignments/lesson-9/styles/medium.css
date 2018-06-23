@@ -58,7 +58,7 @@
     .hamburger {
         display: none;
     }
-    section.gallery {
+    div.gallery {
         grid-template-columns: repeat(2, 50%);
         grid-gap: 0%;
     }
