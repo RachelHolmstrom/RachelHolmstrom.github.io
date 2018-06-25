@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tri-City Weather Bureau</title>
+        <meta name="author" content="Rachel Holmstrom">
+        <meta name="description" content="Weather for Everyone">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+
+    <body>
+        <header>
+
+            <h1>Tri-City Weather Bureau</h1>
+        </header>
+
+        <nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springville</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <img class="Large" src="images/franklin-large.jpg" alt="trees and sky">
+        <img class="Medium" src="images/franklin-medium.jpg" alt="trees and sky">
+        <img class="Small" src="images/franklin-small.jpg" alt="trees and sky">
+        <main>
+            <h1>Forcast</h1>
+            <h2>Weather conditions for <span id="place">city</span></h2>
+        </main>
+        <h2 class="center"><a href="../../index.html">Return to Portal</a></h2>
+        <footer>
+            <section class="contact">
+                <h2>Contact Info:</h2>
+                Tri-City Weather Bureau<br>999.999.9999<br>123 Main St.<br>Anytown,US 99999
+                GoogleMap
+            </section>
+
+            <section class="footer-bar">
+                <h2>&copy;2018 | All Rights Reserved |Tri-City Weather Bureau | <span id="currentdate">Current Date Placeholder</span></h2>
+            </section>
+        </footer>
+        <script src="scripts/home.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
+
