@@ -1,8 +1,18 @@
 weatherRequest = new XMLHttpRequest();
+cityname = document.getElementById("cityname").innerHTML;
+ID = 0;
+switch(cityname) {
+    case("Franklin City"): ID = 4759986;
+        break;
+    case("Greenville City"): ID = 4695066;
+        break;
+    case("Springfield City"): ID = 4409896;
+        break;
+}
+ID = ID.toString();
+call = 'https://api.openweathermap.org/data/2.5/weather?id='+ID+'&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial';
+weatherRequest.open('GET',call,true);
 
-weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?id=4759986&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial',true);
-weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?id=4695066&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial',true)
-weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?id=4409896&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial',true)
 weatherRequest.send();
 weatherRequest.onload = function() {
     var weatherInfo = JSON.parse(weatherRequest.responseText);
@@ -14,8 +24,19 @@ weatherRequest.onload = function() {
     document.getElementById('low-temperature').innerHTML = weatherInfo.main.temp_min;
     document.getElementById('wind-speed').innerHTML = weatherInfo.wind.speed;
 
-var iconcode= weatherInfo.weather[0].icon;
+    var iconcode= weatherInfo.weather[0].icon;
 
-var icon_path= "https://openweathermap.org/img/w/"+ iconcode +".png";
-document.getElementById('weather_icon').src= icon_path;
+    var icon_path= "https://openweathermap.org/img/w/"+ iconcode +".png";
+    document.getElementById('weather_icon').src= icon_path;
+}
+
+forcastcall = 'https://api.openweathermap.org/data/2.5/forecast?id='+ID+'&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial';
+forcastRequest = new XMLHttpRequest();
+forcastRequest.open('GET',forcastcall,true);
+
+forcastRequest.send();
+forcastRequest.onload = function(){
+    var forcastInfo = JSON.parse(forcastRequest.responseText);
+    console.log(forcastInfo);
+
 }
