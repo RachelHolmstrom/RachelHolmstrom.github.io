@@ -103,7 +103,9 @@ section.weather-summary {
     padding: 10px;
     float: right;
 }
-
+#Home, #franklin, #gallery, #green, #spring, #storm {
+    background-color: darkorange;
+}
 article {
     font-size: 1.2rem;
 }

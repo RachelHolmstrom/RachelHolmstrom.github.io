@@ -38,5 +38,4 @@ forcastRequest.send();
 forcastRequest.onload = function(){
     var forcastInfo = JSON.parse(forcastRequest.responseText);
     console.log(forcastInfo);
-
 }
