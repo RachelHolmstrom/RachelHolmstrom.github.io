@@ -38,4 +38,12 @@ forcastRequest.send();
 forcastRequest.onload = function(){
     var forcastInfo = JSON.parse(forcastRequest.responseText);
     console.log(forcastInfo);
+    for (var time = 0; time < forcastInfo.list.length; time += 8) {
+        var day = document.createElement('th');
+        var temp = document.createElement('td');
+        day.textContent = forcastInfo.list[time].dt_txt.slice(0,10);
+        document.getElementById('forcastdays').appendChild(day);
+        temp.textContent =  forcastInfo.list[time].main.temp + "°F";
+        document.getElementById('forcasttemp').appendChild(temp);
+    }
 }
