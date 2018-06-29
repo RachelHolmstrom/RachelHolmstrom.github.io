@@ -96,6 +96,9 @@ section.weather-summary {
     height: auto;
     padding: 0px;
 }
+.bodyicon {
+    width: 15%;
+}
 table {
     width: 80%;
     text-align: center;
