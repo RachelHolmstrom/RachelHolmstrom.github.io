@@ -28,6 +28,13 @@ weatherRequest.onload = function() {
 
     var icon_path= "https://openweathermap.org/img/w/"+ iconcode +".png";
     document.getElementById('weather_icon').src= icon_path;
+    if (weatherInfo.main.temp <= 50) {
+        var chill;
+        chill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * weatherInfo.wind.speed + 0.4275 * weatherInfo.main.temp * weatherInfo.wind.speed;
+        document.getElementById("windchill").innerHTML = "Wind Chill: " + chill + " F";
+    } else {
+        document.getElementById("windchill").innerHTML = "Wind Chill: None" ;
+    }
 }
 
 forcastcall = 'https://api.openweathermap.org/data/2.5/forecast?id='+ID+'&APPID=c88a8636d1948b12488e190a31a4a292&units=imperial';
