@@ -14,10 +14,11 @@ body {
     color: #F1E3F3;
 }
 .icon {
-    position: absolute;
+    position: center;
 }
 .bodyicon {
-    position: relative;
+    display: flex;
+    flex-flow: wrap;
 }
 
 header h1 {
@@ -213,7 +214,9 @@ form label.two input:required {
 form label.two input:required:valid {
     border-left: blue solid 6px;
 }
-
+section.forecast {
+    display: none;
+}
 @media only screen and (max-width: 37.5em) {
     .Large {
         display: none;
