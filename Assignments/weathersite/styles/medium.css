@@ -24,7 +24,7 @@
         border: 5px solid #3590F3;
         font-size: 1.3rem;
         margin-top: 10px;
-    }  /* show the 10-day forecast with the medium view and up */
+    }  /* show the 5-day forecast with the medium view and up */
 
     .forecast th {
         text-align: center;
@@ -52,6 +52,7 @@
         width: 100%;
         height: auto;
         max-height: 200px;
+        column-count: 3;
     }
     .Large {
         display: none;

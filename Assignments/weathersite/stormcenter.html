@@ -40,10 +40,10 @@
             <h1>Storm Report</h1>
                 <form method="get" action="thanks.html">
                     <fieldset>
-                        <legend>Storm Center</legend>
-                        <h4 class="center"><a href="../../index.html">Return to Portal</a></h4>
-                        <label class="one">Storm Date<input type="date"></label>
-                        <label class="one">Type of Storm<input type="text" name="storm" list="storm">
+                        <legend class="one">Storm Center</legend>
+
+                        <label class="center">Storm Date<input type="date"></label>
+                        <label class="center">Type of Storm<input type="text" name="storm" list="storm">
                             <datalist id="storm">
                                 <option value="Flash Flood"></option>
                                 <option value="Hail"></option>
@@ -52,11 +52,11 @@
                                 <option value="Tornado"></option>
                             </datalist>
                         </label>
-                        <label class="one" for="rating">Rating (1 to 10)
+                        <label class="center" for="rating">Rating (1 to 10)
                             <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span>
                         </label>
-                        <label class="one">
+                        <label class="center">
                             <select name="City">
                                 <option value="">Select Region &#9662;</option>
                                 <option value="Franklin">Franklin</option>
@@ -68,25 +68,24 @@
                     <fieldset>
                         <legend class="one">Are you in danger?</legend>
                         <div>Level of Danger</div>
-                        <label><input type="radio" name="person" value="yes">Yes</label>
-                        <label><input type="radio" name="person" value="no">No</label>
-                        <label><input type="radio" name="person" value="maybe">Maybe</label>
+                        <label class="center"><input type="radio" name="person" value="yes">Yes</label>
+                        <label class="center"><input type="radio" name="person" value="no">No</label>
+                        <label class="center"><input type="radio" name="person" value="maybe">Maybe</label>
 
                     </fieldset>
 
                     <fieldset>
-                        <legend>Contact Information</legend>
-                        <label class="two">First Name*<input type="text" name="fname" required></label>
-                        <label class="two">Last Name*<input type="text" name="lname" required></label>
-                        <label class="two">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                        <label class="two">Zip Code* <input type="number" name="zipcode" placeholder="123451234" required></label>
-                        <label class="two">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <legend class="one">Contact Information</legend>
+                        <label class="center">First Name*<input type="text" name="fname" placeholder="First Name" required></label>
+                        <label class="center">Last Name*<input type="text" name="lname" placeholder="Last Name" required></label>
+                        <label class="center">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="center">Zip Code* <input type="number" name="zipcode" placeholder="123451234" required></label>
+                        <label class="center">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                     </fieldset>
                     <input type="submit" value="Enter Report" class="submitBtn">
                 </form>
-
-
         </main>
+        <h4 class="center"><a href="../../index.html">Return to Portal</a></h4>
         <footer>
             <section class="contact">
                 <h2>Contact Info:</h2>

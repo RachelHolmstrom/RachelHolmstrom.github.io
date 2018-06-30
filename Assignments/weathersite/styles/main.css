@@ -9,12 +9,12 @@ body {
 .header {
     background-color: #3590F3;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     color: #F1E3F3;
 }
 .icon {
-    position: center;
+    align-content: center;
 }
 .bodyicon {
     display: flex;
@@ -71,16 +71,19 @@ nav li a.active {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    color: black;
+    color: aliceblue;
     font-size: 1.2rem;
     text-align: center;
 }
 nav li {
     border: 1px solid white;
 }
+nav ul li:hover {
+    background-color: green;
 
-nav:hover .button{
-    background-color: cadetblue;
+}
+nav button:hover {
+    color: green;
 }
 nav:hover {
     display: block;
@@ -107,6 +110,9 @@ table {
 }
 .center {
     text-align: center;
+    width: 100%;
+    height: auto;
+    border: 20px solid white;
 }
 .highlow, .current {
     padding: 20px;
@@ -169,10 +175,10 @@ form fieldset {
     border-radius: 10px;
     padding: .5rem 2%;
 }
-form legend {
+form one {
     color: cadetblue;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0.75rem 0;
 }
 form label.one {
     display: block;
@@ -195,8 +201,8 @@ form label.one, form label.one select{
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1)
 }
-.clearfix::after {
-    content: "";
+.clearfix{
+    content: " ";
     clear: both;
     display: table;
 }
