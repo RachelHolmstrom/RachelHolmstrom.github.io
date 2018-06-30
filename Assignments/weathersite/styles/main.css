@@ -118,6 +118,9 @@ table {
     padding: 10px;
     float: right;
 }
+.hidden {
+    display: none;
+}
 #Home, #franklin, #gallery, #green, #spring, #stormcenter {
     background-color: darkorange;
 }
