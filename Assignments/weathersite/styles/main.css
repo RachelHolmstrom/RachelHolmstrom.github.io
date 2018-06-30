@@ -33,7 +33,7 @@ div.gallery {
     grid-template-columns: repeat(1, 100%);
     text-align: center;
 }
-.FullImg {
+.FullImg  {
     width: 100%;
     height: auto;
 }
@@ -229,6 +229,10 @@ form label.two input:required:valid {
     border-left: blue solid 6px;
 }
 section.forecast {
+    display: none;
+}
+
+.Medium {
     display: none;
 }
 @media only screen and (max-width: 37.5em) {
