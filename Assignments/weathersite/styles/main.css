@@ -232,11 +232,12 @@ section.forecast {
     display: none;
 }
 
-.Medium {
-    display: none;
-}
 @media only screen and (max-width: 37.5em) {
+
     .Large {
+        display: none;
+    }
+    .Medium {
         display: none;
     }
 }
