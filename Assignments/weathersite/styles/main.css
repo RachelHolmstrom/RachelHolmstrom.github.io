@@ -79,11 +79,11 @@ nav li {
     border: 1px solid white;
 }
 nav ul li:hover {
-    background-color: green;
+    background-color: lightseagreen;
 
 }
 nav button:hover {
-    color: green;
+    color: blue;
 }
 nav:hover {
     display: block;
@@ -94,11 +94,6 @@ section.weather-summary {
     justify-content: space-between;
     border: 5px solid #62BFED;
     font-size: 2.8rem;
-}
-.TinyImage {
-    width: 100%;
-    height: auto;
-    padding: 0px;
 }
 .bodyicon {
     width: 15%;
@@ -128,7 +123,7 @@ table {
     display: none;
 }
 #Home, #franklin, #gallery, #green, #spring, #stormcenter {
-    background-color: darkorange;
+    background-color: deepskyblue;
 }
 article {
     font-size: 1.2rem;
@@ -165,7 +160,7 @@ nav ul.hide {
 .Small{
     width: 100%;
     height: auto;
-    max-height: 100px;
+
 }
 form fieldset {
     display: flex;
@@ -184,18 +179,19 @@ form label.one {
     display: block;
     padding: .75px;
     color: cadetblue;
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin: 20px;
 }
 form label.one input {
     margin: 50px;
+    padding: 0.7rem 0;
 }
 form label.one, form label.one select{
     display: block;
     font-size: 1rem;
     border: solid 1px cadetblue;
     border-radius: 1px;
-    padding: .75rem 0;
+    padding: .7rem 0;
     color: cadetblue;
     width: 96%;
     max-width: 20rem;
@@ -208,7 +204,7 @@ form label.one, form label.one select{
 }
 form label.two{
     display: block;
-    padding: .75rem 0;
+    padding: .7rem 0;
     color: cadetblue;
     width: 100%;
     max-width: 20rem;
