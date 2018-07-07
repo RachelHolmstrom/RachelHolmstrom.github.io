@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Menu</title>
+    <link rel="stylesheet" href="css/animatedMenu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.navigation > li').hover(function(){
+            $(this).addClass('openSesame');
+        }, function(){
+            $(this).removeClass('openSesame');
+
+        })
+
+    })
+    </script>
+</head>
+    <h2 class="center"><a href="index.htm">Return to Alcove</a></h2>
+
+<body>
+
+
+    <ul class="navigation">
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Catalog</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
+
+</body>
+</html>
