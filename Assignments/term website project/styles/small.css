@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Merriweather", "sans-serif";
+    align-content: center;
+    margin: 1%;
+    background-color: #00FF74;
+}
