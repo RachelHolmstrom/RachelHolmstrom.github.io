@@ -3,7 +3,12 @@
 }
 body {
     font-family: "Merriweather", "sans-serif";
-    align-content: center;
-    margin: 1%;
+    text-align: center;
     background-color: #00FF74;
+}
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: none;
+    margin: none;
 }
