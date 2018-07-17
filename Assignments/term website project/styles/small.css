@@ -8,6 +8,19 @@ body {
     color: 	#000080;
     font-size: 20px;
 }
+img.small {
+    width: 100%;
+    height: auto;
+}
+img.medium {
+    display: none;
+}
+img.large {
+    display: none;
+}
+header.incon {
+    padding: none;
+}
 ul {
     text-align: center;
     list-style-type: none;
@@ -26,7 +39,10 @@ nav li {
     z-index: 1;
 }
 nav ul li:hover {
-    background-color: aliceblue;
+    background-color: #008080;
+}
+#daily, #info, #events, #home, #sales, #services {
+    background-color: white;
 }
 @media only screen and (max-width: 37.5em) {
 

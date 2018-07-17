@@ -1,3 +1,27 @@
 @media only screen and (min-width: 64em ) {
-
+    nav ul {
+        overflow: hidden;
+    }
+    nav ul li {
+        float: left;
+        background-color: none;
+        padding: 10px;
+        margin: 0;
+        word-wrap: normal;
+    }
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+    img.large {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+    img.medium {
+        display: none;
+    }
+    img.small {
+        display: none;
+    }
 }
