@@ -44,6 +44,45 @@ nav ul li:hover {
 #daily, #info, #events, #home, #sales, #services {
     background-color: white;
 }
+table {
+    width: 80%;
+    text-align: center;
+    margin: 2rem 0;
+}
+.center {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 20px solid teal;
+}
+form fieldset, textarea {
+    display: flex;
+    flex-flow: column;
+    margin: 2rem 0;
+    border: 1px solid teal;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+form label.one{
+    display: block;
+    padding: .7rem 0;
+    width: 100%;
+    max-width: 20rem;
+}
+form label.one input {
+    margin: 50px;
+    padding: 0.7rem 0;
+}
+
+form input.submitBtn {
+    border: none;
+    color: teal;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
 @media only screen and (max-width: 37.5em) {
 
     .Large {
