@@ -18,14 +18,17 @@ img.medium {
 img.large {
     display: none;
 }
+iframe {
+    align-content: center;
+}
 header.incon {
-    padding: none;
+    padding: 2%;
 }
 ul {
     text-align: center;
     list-style-type: none;
-    padding: none;
-    margin: none;
+    padding: 2%;
+    margin: 2%;
 }
 nav li {
     background: none;
