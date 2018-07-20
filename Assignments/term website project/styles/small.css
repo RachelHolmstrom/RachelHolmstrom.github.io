@@ -34,16 +34,26 @@ ul {
     padding: 2%;
     margin: 2%;
 }
-nav li {
+nav {
     background: none;
-    font-family: "Merriweather", "sans-serif";
-    padding: 16px;
-    font-size: 30px;
-    color: 	#000080;
-    display: block;
-    margin: 0px;
+    margin: 2%;
     min-width: 160px;
     z-index: 1;
+}
+nav hover {
+    color: teal;
+}
+nav li a.active {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: 	#000080;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+}
+nav.ul {
+    list-style-type: none;
+    padding: 1%;
 }
 nav ul li:hover {
     background-color: #008080;
