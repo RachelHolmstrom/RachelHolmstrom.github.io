@@ -48,6 +48,7 @@ nav li {
 nav ul li:hover {
     background-color: #008080;
 }
+
 #daily, #info, #events, #home, #sales, #services {
     background-color: white;
 }
