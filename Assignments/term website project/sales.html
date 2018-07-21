@@ -15,9 +15,10 @@
 
     <body>
         <header>
-        <img src="img/icons8-mountain-48%20-%20Copy.png" alt="twin mountains">
-        <h1>The Mountain Spoke Stores</h1>
-        <img src="img/icons8-cycling-mountain-bike-48%20-%20Copy.png" alt="bicyclist climbing">
+            <img src="img/icons8-mountain-48%20-%20Copy.png" alt="twin mountains">
+            <h1>The Mountain Spoke Stores</h1>
+            <h2>Bike to the Top</h2>
+            <img src="img/icons8-cycling-mountain-bike-48%20-%20Copy.png" alt="bicyclist climbing">
         </header>
         <nav>
             <ul>
@@ -30,7 +31,51 @@
             </ul>
         </nav>
         <main>
+            <h1>RED HOT SPECIALS-ONLY FOR A LIMITED TIME!</h1>
+                <img class="large" src="img/sales%201100.jpg" alt="one bicycle">
+                <img class="medium" src="img/sales%20800.jpg" alt="one bicycle">
+                <img class="small" src="img/sales%20500.jpg" alt="one bicycle">
+            <h2>Biking is for everyone.</h2>
+                <p>These special deals will expire on August 31.</p>
+            <button class="accordion">A unique bike for your precious little person.
+            </button>
+                <div class="panel">
+                    <p>This bike is only $299! Set those media games aside and take them on a bike ride through the beautiful bike trails within the city, county, and state parks.</p>
+                    <img class="large" src="img/sales%20child%20bike%201100.jpg" alt="child on a bike">
+                    <img class="medium" src="img/sales%20child%20bike%20800.jpg" alt="child on a bike">
+                    <img class="small" src="img/sales%20child%20bike%20800.jpg" alt="chiild on a bike">
+            </div>
+            <button class="accordion">Two for the price of one.</button>
+            <div class="panel">
+                <p>Tired of going to restaurants and movies. For only $348, spend time together with these two bikes which are the price of one. With these unique bikes, you and your companion can spend time together, as well as enjoy the beautiful bike trails around you.</p>
+                <img class="large" src="img/sales%20twin%20bikes%201100.jpg" alt="two bicycles">
+                <img class="medium" src="img/sales%20twin%20bikes%20800.jpg" alt="two bicycles">
+                <img class="small" src="img/sales%20twin%20bikes%20500.jpg" alt="two bicycles">
+            </div>
+            <button class="accordion">Trek Bike</button>
+            <div class="panel">
+                <p>Are you serious about biking and increasing your endurance? Then this is the bike for you. For only $348, you can own this bike and do the Contential Divide Trek.  Act now, for there is a limited supply.</p>
+                <img class="large" src="img/sales%20single%20bike%201100.jpg" alt="single bike">
+                <img class="medium" src="img/sales%20single%20bike%20800.jpg" alt="single bike">
+                <img class="small" src="img/sales%20single%20bike%20500.jpg" alt="single bike">
+            </div>
+            <h3 class="center">DON'T MISS THESE BLOW OUT DEALS!</h3>
         </main>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
         <footer>
             <h3>&copy;2018 | Rachel Holmstrom | All Rights Reserved | <a href="resources.html">References</a></h3>
         </footer>
